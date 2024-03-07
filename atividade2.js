@@ -1,0 +1,12 @@
+var teclado = require("prompt-sync")();
+var x = parseFloat(teclado("Digite um valor para x"));
+var y = parseFloat(teclado("Digite um valor para y"));
+console.log("N\u00FAmeros originais:");
+console.log("x = " + x);
+console.log("y = " + y);
+var temp = x;
+x = y;
+y = temp;
+console.log("N\u00FAmeros depois da troca:");
+console.log("x = " + x);
+console.log("y = " + y);
